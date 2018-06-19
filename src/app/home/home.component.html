@@ -1,0 +1,72 @@
+<td-layout-nav navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span>Главная</span>
+    <span flex></span>
+    <a mat-icon-button matTooltip="Docs" href="https://teradata.github.io/covalent/" target="_blank">
+      <mat-icon>chrome_reader_mode</mat-icon>
+    </a>
+    <a mat-icon-button matTooltip="Github" href="https://github.com/teradata/covalent" target="_blank">
+      <mat-icon svgIcon="assets:github"></mat-icon>
+    </a>
+  </div>
+  <div layout-gt-sm="row" tdMediaToggle="gt-xs" mediaClasses="['push-sm']">
+    <div flex-gt-sm="60">
+      <div layout-gt-xs="row">
+        <div flex-gt-xs="100">
+          <mat-card>
+            <mat-card-title>Products Sales</mat-card-title>
+            <mat-card-subtitle>usage stats for our products</mat-card-subtitle>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <div layout-gt-xs="row">
+        <div flex-gt-xs="33">
+          <mat-card>
+            <mat-card-content class="text-center">
+              <div class="mat-headline push-bottom-none">{{ '2341'| number }} <mat-icon class="tc-green-500 text-sm">arrow_upward</mat-icon></div>
+              <mat-icon class="icon tc-indigo-700">perm_contact_calendar</mat-icon>
+              <div>
+                <div class="mat-subheading-2 push-bottom-none">Active Users</div>
+                <div class="mat-caption tc-grey-600">updated {{ '2016-06-17 12:59:59' | date }}</div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div flex-gt-xs="33">
+          <mat-card>
+            <mat-card-content class="text-center">
+              <div class="mat-headline push-bottom-none">{{ '72452903343' | number }} <mat-icon class="tc-red-500 text-sm">arrow_downward</mat-icon></div>
+              <mat-icon class="icon tc-light-blue-700">sd_storage</mat-icon>
+              <div>
+                <div class="mat-subheading-2 push-bottom-none">User Disk Usage</div>
+                <div class="mat-caption tc-grey-600">updated {{ '2016-07-18 11:02:59' | date }}</div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div flex-gt-xs="33">
+          <mat-card>
+            <mat-card-content class="text-center">
+              <div class="mat-headline push-bottom-none">{{ '324523' | number }} <mat-icon class="tc-green-500 text-sm">arrow_upward</mat-icon></div>
+              <mat-icon class="icon tc-cyan-700">receipt</mat-icon>
+              <div>
+                <div class="mat-subheading-2 push-bottom-none">Pages Viewed</div>
+                <div class="mat-caption tc-grey-600">updated {{ '2016-07-13 09:59:59' | date }}</div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+  </div>
+  <td-layout-footer>
+    <div layout="row" layout-align="start center">
+      <span class="mat-caption">Copyright &copy; {{year}} Teradata. All rights reserved</span>
+      <span flex></span>
+      <mat-icon class="mat-icon-ux" svgIcon="assets:teradata-ux"></mat-icon>
+    </div>
+  </td-layout-footer>
+</td-layout-nav>
